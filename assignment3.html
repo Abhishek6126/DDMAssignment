@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhishek's Assigments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Third Assignment</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="index.html">Home</a>
+        <a href="men.html">First Assignment</a>
+        <a href="women.html">Second Assignment</a>
+        <a href="About/About.html">About</a>
+        <a href="contact/project1.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Fake News Detection in Country</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+<div class="w3-row w3-padding-64" id="intro-mapreduce">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="resources/hadoop-icon-512x385-on26r76p.png" class="w3-round w3-image w3-opacity-min" alt="Fake News Hadoop" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Hadoop Takes on Fake News</h1><br>
+    <h5 class="w3-center">Distributed Power, National Scale</h5>
+    <p class="w3-large">
+      Fake news isn’t just a buzzword — it’s a national-scale challenge. With massive datasets like <span class="w3-tag w3-light-grey">IFND</span>, traditional tools fall short. That’s where <strong>Hadoop MapReduce</strong> steps in — bringing scalable, distributed computing to the frontline of misinformation detection.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      This project processes thousands of articles in parallel to uncover patterns in fake news. From analyzing top authors and suspicious sources to tracking trends over time, MapReduce jobs efficiently turn big data into clear insights — helping stakeholders make smarter decisions in the fight against false information.
+    </p>
+  </div>
+</div>
+
+  
+  
+  <hr>
+  
+ <!-- MapReduce Functionality Section -->
+<div class="w3-row w3-padding-64" id="mapreduce-functions">
+  <div class="w3-col l6 w3-padding-large">
+    <h1 class="w3-center">MapReduce Modules</h1><br>
+
+    <h4>Data Preprocessing</h4>
+    <p class="w3-text-grey">Raw news articles were cleaned and preprocessed using MapReduce by removing null values and extracting fields like Title, Text, Author, Source, and Label.</p><br>
+
+    <h4>Fake vs. Real News Count</h4>
+    <p class="w3-text-grey">A MapReduce job was used to compute the total number of fake and real news articles, highlighting dataset imbalance.</p><br>
+
+    <h4>Word Frequency Analysis</h4>
+    <p class="w3-text-grey">This module identifies the most frequently used words in fake news, revealing linguistic patterns that often signal misinformation.</p><br>
+
+    <h4>Source-wise Distribution</h4>
+    <p class="w3-text-grey">Analyzes which news sources contribute most to fake news, helping to identify untrustworthy platforms or biased reporting outlets.</p><br>
+
+    <h4>Top Fake News Authors</h4>
+    <p class="w3-text-grey">Discovers authors with the highest number of fake news articles to understand who is frequently linked to misinformation.</p><br>
+
+    <h4>Word Length Distribution</h4>
+    <p class="w3-text-grey">Analyzes the average word length in fake news content — revealing tendencies toward simpler, more readable language.</p><br>
+
+    <h4>Month-wise & Year-wise Trend Analysis</h4>
+    <p class="w3-text-grey">These modules track fake news trends across months and years, uncovering spikes during events like elections or pandemics.</p><br>
+
+    <h4>Visualization & Output Export</h4>
+    <p class="w3-text-grey">Results from each MapReduce program were visualized using Python (Matplotlib, Seaborn), helping interpret insights easily.</p><br>
+  </div>
+
+  <div class="w3-col l6 w3-padding-large">
+    <img src="resources/month.png" 
+         class="w3-round w3-image w3-opacity-min" alt="MapReduce Pipeline" style="width:100%">
+  </div>
+</div>
+
+  
+  
+  <hr>
+<div class="w3-row w3-padding-64" id="fake-vs-real">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/Labelcount.png" class="w3-round w3-image w3-opacity-min" alt="Fake vs Real Visualization" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Fake vs Real News Count</h1><br>
+    <h5 class="w3-center">Understanding Dataset Imbalance</h5>
+    <p class="w3-large">
+      This module uses a MapReduce job to count the number of fake and real news articles in the dataset. The result revealed a notable class imbalance — a critical insight when designing classification systems.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      The output shows a higher count of fake news, emphasizing the need for robust fake news detection frameworks. A bar chart visualizes the imbalance clearly for better interpretation.
+    </p>
+  </div>
+</div>
+
+  
+<hr>
+<div class="w3-row w3-padding-64" id="word-frequency">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/wordlen.png" class="w3-round w3-image w3-opacity-min" alt="Word Frequency Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Frequent Words in Fake News</h1><br>
+    <h5 class="w3-center">Spotting Common Misinformation Language</h5>
+    <p class="w3-large">
+      This MapReduce job calculates the most frequent words used in fake news articles. The output highlights commonly used terms that can act as linguistic red flags.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      The frequency data was visualized using a bar chart to showcase top recurring terms — helping in understanding how fake news is framed.
+    </p>
+  </div>
+</div>
+
+</div>
+
+<hr>
+<div class="w3-row w3-padding-64" id="source-distribution">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/categorycount.png" class="w3-round w3-image w3-opacity-min" alt="Source-wise Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Source-wise News Distribution</h1><br>
+    <h5 class="w3-center">Tracking Fake News Origins</h5>
+    <p class="w3-large">
+      This module analyzes how different news sources contribute to fake news using MapReduce. It identifies outlets that are more frequently associated with misinformation.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      This insight helps regulators and researchers track potential misinformation hubs. The graph visually represents the most and least trustworthy sources.
+    </p>
+  </div>
+</div>
+
+    
+<hr>
+<div class="w3-row w3-padding-64" id="top-authors">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/TopAuthors.png" class="w3-round w3-image w3-opacity-min" alt="Top Authors Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Top Authors of Fake News</h1><br>
+    <h5 class="w3-center">Who’s Writing the Lies?</h5>
+    <p class="w3-large">
+      A MapReduce job extracts the most common authors linked with fake news. This data helps in profiling repeat offenders or identifying automated bots.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      Visualizing the top contributors to fake articles helps stakeholders take informed actions and spot coordinated campaigns.
+    </p>
+  </div>
+</div>
+
+
+<hr>
+<div class="w3-row w3-padding-64" id="word-length">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/wordlen.png" class="w3-round w3-image w3-opacity-min" alt="Word Length Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Word Length Distribution</h1><br>
+    <h5 class="w3-center">How Simple Is Fake News Language?</h5>
+    <p class="w3-large">
+      This module analyzes the average word length used in fake news. Results showed a pattern of shorter words — often associated with easier readability and fast consumption.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      The visualization reveals linguistic trends, helping improve NLP models that depend on text complexity as a feature.
+    </p>
+  </div>
+</div>
+<hr>
+<div class="w3-row w3-padding-64" id="monthly-trend">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/month.png" class="w3-round w3-image w3-opacity-min" alt="Monthly Count Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Month-wise News Count</h1><br>
+    <h5 class="w3-center">Seasonal Spikes in Misinformation</h5>
+    <p class="w3-large">
+      Using MapReduce, this module tracks the volume of news published each month across the dataset. Notable spikes were observed during political and global events.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      Understanding these seasonal patterns helps identify periods of high fake news activity and prepare monitoring systems in advance.
+    </p>
+  </div>
+</div>
+<hr>
+<div class="w3-row w3-padding-64" id="yearly-trend">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    
+    <img src="resources/dateyear.png" class="w3-round w3-image w3-opacity-min" alt="Yearly Count Graph" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Year-wise News Count</h1><br>
+    <h5 class="w3-center">How Fake News Has Grown Over Time</h5>
+    <p class="w3-large">
+      This module counts the number of news articles published per year. A clear upward trend was observed, especially post-2018 — aligning with the rise of social media and misinformation campaigns.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      These insights help map the evolution of fake news and inform long-term strategies for detection and prevention.
+    </p>
+  </div>
+</div>
+
+<hr>
+<!-- Execution Demo Section -->
+<div class="w3-row w3-padding-64" id="demo">
+    
+    
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <h1 class="w3-center">Project Execution Demo</h1><br>
+      <h5 class="w3-center">From Code to Clarity</h5>
+      <p class="w3-large">
+        This video walkthrough captures the complete execution pipeline — from data preprocessing and exploratory analysis to machine learning model training and evaluation. It demonstrates how each component works in sync to detect fake news with precision.
+      </p>
+      <div class="w3-container w3-padding-16">
+        <!-- Replace the src link below with your YouTube or MP4 embed -->
+        <div class="w3-round w3-image w3-opacity-min">
+          <iframe width="100%" height="315" src="ExecutionVideo.webm"
+                  title="Project Demo Video" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>  
+ <!-- Conclusion Section -->
+<!-- Conclusion Section -->
+<div class="w3-row w3-padding-64" id="conclusion-mapreduce">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="resources/conclusions.webp" class="w3-round w3-image w3-opacity-min" alt="Conclusion" width="600" height="750">
+  </div>
+  
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Final Thoughts</h1><br>
+    <h5 class="w3-center">Distributed Data, Unified Insight</h5>
+    <p class="w3-large">
+      This project showcased how Hadoop MapReduce can move mountains of unstructured data — turning news chaos into patterns, and patterns into power. From raw CSVs to intelligent visual summaries, the pipeline handled it all with scalable precision.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      Each module — from source tracing to author profiling — peeled back layers of misinformation. The MapReduce framework didn't just process the data; it empowered a deeper understanding of how fake news flows, grows, and evolves. This assignment proves one thing loud and clear: when it comes to taming digital disorder, distributed systems are the way forward.
+    </p>
+  </div>
+</div>
+
+  
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

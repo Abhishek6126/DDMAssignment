@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhishek's Assigments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">First Assignment</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="index.html">Home</a>
+        <a href="women.html">Second Assignment</a>
+        <a href="assignment3.html">Third Assignment</a>
+        <a href="About/About.html">About</a>
+        <a href="contact/project1.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Fake News Detection in Country</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="resources/correlaheatbangla.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Statistical Analysis</h1><br>
+        <h5 class="w3-center">Detecting Fake News through Data</h5>
+        <p class="w3-large">
+          In today's digital age, fake news has become a serious concern, influencing public opinion and critical decision-making across politics, health, and finance. This study focuses on applying statistical and visualization techniques to identify patterns in fake and real news articles. 
+          Using datasets such as <span class="w3-tag w3-light-grey">Bangla News</span> and <span class="w3-tag w3-light-grey">LIAR</span>, we explore linguistic trends, content structures, and correlations that help distinguish real news from misinformation.
+        </p>
+        <p class="w3-large w3-text-grey w3-hide-medium">
+          Through methods like word count analysis, text length distribution, correlation heatmaps, and entity recognition, we aim to uncover the underlying statistical traits of fake news. These insights are crucial for building more accurate and reliable automated fake news detection systems.
+        </p>
+      </div>
+      
+  
+  <hr>
+  
+ <!-- Functionality Section -->
+<div class="w3-row w3-padding-64" id="functions">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Implemented Modules</h1><br>
+  
+      <h4>Data Preprocessing</h4>
+      <p class="w3-text-grey">Cleaning of text data by removing duplicates, stopwords, and punctuation. Computation of word, character, and sentence counts.</p><br>
+  
+      <h4>Category Distribution</h4>
+      <p class="w3-text-grey">Bar chart visualization of the frequency of different news categories (e.g., Politics, Sports, etc.).</p><br>
+  
+      <h4>Fake vs. Real News Distribution</h4>
+      <p class="w3-text-grey">Pie chart and bar plot to visualize the class imbalance between real and fake news articles.</p><br>
+  
+      <h4>Word & Text Length Analysis</h4>
+      <p class="w3-text-grey">Histogram and box plot visualizations showing differences in word and character counts between fake and real news.</p><br>
+  
+      <h4>Correlation Heatmap</h4>
+      <p class="w3-text-grey">A heatmap to analyze correlations between text features like word count, character count, and sentence count.</p><br>
+  
+      <h4>Speaker & Source Analysis</h4>
+      <p class="w3-text-grey">Visualization of frequent statement originators in the LIAR dataset to analyze the role of individuals in misinformation.</p><br>
+  
+      <h4>Emotion Analysis</h4>
+      <p class="w3-text-grey">Sentiment distribution of articles into positive, negative, and neutral to evaluate emotional tones in fake vs. real news.</p><br>
+  
+      <h4>Named Entity Recognition</h4>
+      <p class="w3-text-grey">Identification of top recurring names and organizations in fake and real news to detect entity-level bias.</p><br>
+    </div>
+  
+    <div class="w3-col l6 w3-padding-large">
+      <img src="resources/spe.jpg" 
+           class="w3-round w3-image w3-opacity-min" alt="Data Pipeline" style="width:100%">
+    </div>
+  </div>
+  
+  <hr>
+  <div class="w3-row w3-padding-64" id="wordcount">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/wordcountbangla.png" class="w3-round w3-image w3-opacity-min" alt="Word Count Analysis" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Word & Text Length Analysis</h1><br>
+      <h5 class="w3-center">Comparing Fake and Real News Structures</h5>
+      <p class="w3-large">
+        This module focuses on analyzing the structure of fake and real news articles using word and character count distributions. Histograms and box plots are employed to visualize text lengths across both categories.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        Findings indicate that real news articles tend to be longer than fake ones. This structural difference helps in understanding writing styles and summarization patterns, which can be vital in feature engineering for classification models.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="fakereal">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/realbangla.png" class="w3-round w3-image w3-opacity-min" alt="Fake vs Real News" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Fake vs Real News Distribution</h1><br>
+      <h5 class="w3-center">Class Imbalance Insights</h5>
+      <p class="w3-large">
+        A class imbalance was observed, where real news significantly outnumbers fake news. Pie charts and bar plots were used to visually present this imbalance.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This observation is crucial for building machine learning models, as imbalanced datasets can lead to biased predictions. Understanding the ratio of fake to real helps in selecting appropriate resampling techniques.
+      </p>
+    </div>
+  </div>
+    <hr>
+  <div class="w3-row w3-padding-64" id="categorydist">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/catbangla.png" class="w3-round w3-image w3-opacity-min" alt="Category Distribution" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Category Distribution</h1><br>
+      <h5 class="w3-center">Topic Prevalence in News</h5>
+      <p class="w3-large">
+        A bar chart visualization showed the frequency of various categories like National, Sports, Politics, and more in the dataset. It provides a quick glance into which topics are most covered.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This helps in understanding where fake news is more likely to appear, and whether certain topics are more vulnerable to misinformation.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="textlength">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/textdistrbangla.png" class="w3-round w3-image w3-opacity-min" alt="Text Length" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Word & Text Length Analysis</h1><br>
+      <h5 class="w3-center">Comparing Writing Styles</h5>
+      <p class="w3-large">
+        Histograms and KDE plots were created to compare word and character count distributions across fake and real news. Real news articles were found to be generally longer.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This structural insight helps in identifying verbosity patterns and writing habits commonly associated with misinformation.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="heatmap">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/correlaheatbangla.png" class="w3-round w3-image w3-opacity-min" alt="Heatmap" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Correlation Heatmap</h1><br>
+      <h5 class="w3-center">Exploring Relationships in Features</h5>
+      <p class="w3-large">
+        The correlation heatmap highlighted strong relationships between features like word count, character count, and sentence count.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This helped in feature selection and understanding which attributes could contribute most to machine learning models for classification.
+      </p>
+    </div>
+  </div>
+<hr>
+<div class="w3-row w3-padding-64" id="speaker">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/speakliar.png" class="w3-round w3-image w3-opacity-min" alt="Speaker Analysis" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Speaker & Source Analysis</h1><br>
+      <h5 class="w3-center">Who Spreads the Fake News?</h5>
+      <p class="w3-large">
+        Analysis of the LIAR dataset revealed key individuals and media sources contributing significantly to false or misleading claims.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This helps track misinformation sources and offers deeper insights into credibility and media responsibility.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="emotion">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/emotliar.png" class="w3-round w3-image w3-opacity-min" alt="Emotion" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Emotion Analysis</h1><br>
+      <h5 class="w3-center">Sentiment Behind the Words</h5>
+      <p class="w3-large">
+        Articles were categorized based on emotional tone (positive, neutral, or negative). Fake news often carried more emotionally charged content.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        Emotion analysis plays a key role in understanding how fake news manipulates reader perception and engagement.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="ner">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/entitiliar.png" class="w3-round w3-image w3-opacity-min" alt="Entity Recognition" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Named Entity Recognition</h1><br>
+      <h5 class="w3-center">Identifying Key People & Places</h5>
+      <p class="w3-large">
+        The system extracted top entities (names, places, organizations) mentioned in both fake and real news articles. 
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        This analysis revealed how fake news often centers around specific figures or themes, helping uncover bias and repetition in misinformation.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <!-- Execution Demo Section -->
+<div class="w3-row w3-padding-64" id="demo">
+    
+    
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <h1 class="w3-center">Project Execution Demo</h1><br>
+      <h5 class="w3-center">From Code to Clarity</h5>
+      <p class="w3-large">
+        This video walkthrough captures the complete execution pipeline — from data preprocessing and exploratory analysis. It demonstrates how each component works in sync to detect fake news with precision.
+      </p>
+      <div class="w3-container w3-padding-16">
+        <!-- Replace the src link below with your YouTube or MP4 embed -->
+        <div class="w3-round w3-image w3-opacity-min">
+          <iframe width="100%" height="315" src="ass1exe1.mp4"
+                  title="Project Demo Video" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <!-- Execution Demo Section -->
+<div class="w3-row w3-padding-64" id="demo">
+    
+    
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <h1 class="w3-center">Project Execution Demo</h1><br>
+      <h5 class="w3-center">From Code to Clarity</h5>
+      <p class="w3-large">
+        This video walkthrough captures the complete execution pipeline — from data preprocessing and exploratory analysis. It demonstrates how each component works in sync to detect fake news with precision.
+      </p>
+      <div class="w3-container w3-padding-16">
+        <!-- Replace the src link below with your YouTube or MP4 embed -->
+        <div class="w3-round w3-image w3-opacity-min">
+          <iframe width="100%" height="315" src="ass1exe2.mp4"
+                  title="Project Demo Video" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64" id="conclusion">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/conclusions.webp" class="w3-round w3-image w3-opacity-min" alt="Conclusion" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Final Thoughts</h1><br>
+      <h5 class="w3-center">Crunching Numbers, Spotting Lies</h5>
+      <p class="w3-large">
+        From messy raw text to clean insights, this project turned chaos into clarity. By blending classic statistical tools with crisp visual storytelling, I dove deep into what sets fake news apart from the real deal.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        Whether it was decoding sentence structures, mapping emotions, or tracing the loudest voices in misinformation, each module added a new lens to the bigger picture. And the best part? These insights don’t just sit pretty — they pave the way for smarter, sharper, and more ethical detection systems.
+        This wasn’t just about data. It was about making sense of the noise. And that journey? Totally worth it.
+      </p>
+    </div>
+  </div>
+  
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abhishek's Assigments</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Second Assignment</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="index.html">Home</a>
+        <a href="men.html">First Assignment</a>
+        <a href="assignment3.html">Third Assignment</a>
+        <a href="About/About.html">About</a>
+        <a href="contact/project1.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Fake News Detection in Country</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="intro-ml">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/tllossblstm.PNG" class="w3-round w3-image w3-opacity-min" alt="Fake News ML" width="600" height="750">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Machine Learning Meets Fake News</h1><br>
+      <h5 class="w3-center">From Stats to Smart Models</h5>
+      <p class="w3-large">
+        In a world flooded with digital content, detecting fake news isn’t just a skill — it’s a necessity. This project goes beyond basic stats and dives into the world of machine learning to classify misinformation with precision.
+        By exploring datasets like <span class="w3-tag w3-light-grey">Bangla News</span>, <span class="w3-tag w3-light-grey">LIAR</span>, and <span class="w3-tag w3-light-grey">IFND</span>, we trained models to recognize the red flags of misinformation.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        The journey includes data cleaning, visual analysis, and predictive modeling using algorithms like Naive Bayes, SVM, Random Forest, and more. The goal? Build systems that don't just read — they understand and judge the credibility of news.
+      </p>
+    </div>
+  </div>
+  
+  
+  <hr>
+  
+ <!-- ML Functionality Section -->
+<div class="w3-row w3-padding-64" id="ml-functions">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Machine Learning Modules</h1><br>
+  
+      <h4>TF-IDF Vectorization</h4>
+      <p class="w3-text-grey">Text data was transformed into numerical vectors using TF-IDF, capturing the importance of words across documents.</p><br>
+  
+      <h4>Model Training & Evaluation</h4>
+      <p class="w3-text-grey">Supervised learning models were trained using a 70-30 train-test split to classify news as fake or real.</p><br>
+  
+      <h4>Naive Bayes Classifier</h4>
+      <p class="w3-text-grey">A probabilistic model known for fast computation; suitable for high-dimensional text classification tasks.</p><br>
+  
+      <h4>Logistic Regression</h4>
+      <p class="w3-text-grey">A linear model used to predict binary outcomes. Achieved high accuracy in detecting fake news.</p><br>
+  
+      <h4>Random Forest Classifier</h4>
+      <p class="w3-text-grey">An ensemble model using multiple decision trees for robust classification and reduced overfitting.</p><br>
+  
+      <h4>Support Vector Machine (SVM)</h4>
+      <p class="w3-text-grey">A margin-based classifier effective in high-dimensional spaces, offering a trade-off between precision and recall.</p><br>
+  
+      <h4>K-Nearest Neighbors (KNN)</h4>
+      <p class="w3-text-grey">A distance-based classifier which compares feature vectors to neighbors for classification.</p><br>
+  
+      <h4>Decision Tree Classifier</h4>
+      <p class="w3-text-grey">A rule-based model which splits data based on feature importance for classification decisions.</p><br>
+  
+      <h4>Model Performance Metrics</h4>
+      <p class="w3-text-grey">Confusion matrices, precision-recall curves, and accuracy scores were used to evaluate each model's performance.</p><br>
+    </div>
+  
+    <div class="w3-col l6 w3-padding-large">
+      <img src="resources/ml.jpg" 
+           class="w3-round w3-image w3-opacity-min" alt="ML Pipeline" style="width:100%">
+    </div>
+  </div>
+  
+  
+  <hr>
+  <div class="w3-row w3-padding-64" id="logistic-regression">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/lrcm.PNG" class="w3-round w3-image w3-opacity-min" alt="Logistic Regression Confusion Matrix" width="100%">
+      <br><br>
+      <img src="resources/lrpcm.PNG" class="w3-round w3-image w3-opacity-min" alt="Precision-Recall Logistic" width="100%">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Logistic Regression</h1><br>
+      <h5 class="w3-center">High Accuracy Linear Classifier</h5>
+      <p class="w3-large">
+        Logistic Regression was trained on TF-IDF features to distinguish between fake and real news. It performed with high accuracy and balanced precision-recall metrics, making it one of the most reliable models in the study.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        The confusion matrix shows a good balance of true positives and true negatives, while the precision-recall curve highlights strong recall capability with minimal trade-off in precision.
+      </p>
+    </div>
+  </div>
+  
+  <hr>
+<div class="w3-row w3-padding-64" id="random-forest">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="resources/rfcm.PNG" class="w3-round w3-image w3-opacity-min" alt="Random Forest Confusion Matrix" width="100%">
+    <br><br>
+    <img src="resources/rfprc.PNG" class="w3-round w3-image w3-opacity-min" alt="Precision-Recall RF" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Random Forest Classifier</h1><br>
+    <h5 class="w3-center">Robust Ensemble Model</h5>
+    <p class="w3-large">
+      The Random Forest model combines multiple decision trees to improve classification performance and reduce overfitting. It was one of the top-performing models in accuracy and consistency across metrics.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      It performed well across both classes, as seen in the confusion matrix. The precision-recall curve also reflects its balanced prediction strength.
+    </p>
+  </div>
+</div>
+
+    <hr>
+    <hr>
+    <div class="w3-row w3-padding-64" id="naive-bayes">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="resources/nbcm.PNG" class="w3-round w3-image w3-opacity-min" alt="Naive Bayes Confusion Matrix" width="100%">
+        <br><br>
+        <img src="resources/nbprc.PNG" class="w3-round w3-image w3-opacity-min" alt="Precision-Recall Naive Bayes" width="100%">
+      </div>
+    
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Naive Bayes</h1><br>
+        <h5 class="w3-center">Efficient Probabilistic Model</h5>
+        <p class="w3-large">
+          Naive Bayes offers fast classification using probabilistic inference. Although slightly lower in accuracy than other models, it remains an efficient choice for large-scale and real-time fake news detection.
+        </p>
+        <p class="w3-large w3-text-grey w3-hide-medium">
+          Precision-recall analysis shows trade-offs, but the confusion matrix indicates reliable detection of both fake and real classes in a short time frame.
+        </p>
+      </div>
+    </div>
+    
+  <hr>
+<div class="w3-row w3-padding-64" id="knn">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="resources/knnc.PNG" class="w3-round w3-image w3-opacity-min" alt="KNN Confusion Matrix" width="100%">
+    <br><br>
+    <img src="resources/knnprc.PNG" class="w3-round w3-image w3-opacity-min" alt="Precision-Recall KNN" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">K-Nearest Neighbors (KNN)</h1><br>
+    <h5 class="w3-center">Instance-Based Learning</h5>
+    <p class="w3-large">
+      KNN classifies articles based on the labels of nearby examples in the feature space. It is simple and interpretable but can be computationally expensive on large datasets.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      The model shows average performance, with slightly more false positives. The precision-recall curve reflects its dependency on proper value of ‘K’ and distance metrics.
+    </p>
+  </div>
+</div>
+
+<hr>
+<hr>
+<div class="w3-row w3-padding-64" id="decision-tree">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+    <img src="resources/dccmm.PNG" class="w3-round w3-image w3-opacity-min" alt="Decision Tree Confusion Matrix" width="100%">
+    <br><br>
+    <img src="resources/dcprc.PNG" class="w3-round w3-image w3-opacity-min" alt="Precision-Recall Decision Tree" width="100%">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Decision Tree Classifier</h1><br>
+    <h5 class="w3-center">Rule-Based Learning</h5>
+    <p class="w3-large">
+      Decision Tree builds a model of decisions based on feature importance. It’s highly interpretable but can be prone to overfitting if not properly pruned.
+    </p>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      While the confusion matrix shows reasonable classification capability, the precision-recall curve highlights areas where the model could misclassify under uncertainty.
+    </p>
+  </div>
+</div>
+  <hr>
+<div class="w3-container w3-padding-64" id="model-comparison">
+  <h1 class="w3-center">Model Performance Comparison</h1><br>
+  <img src="resources/machinec.png" class="w3-round w3-image w3-opacity-min" alt="Conclusion" width="600" height="750">
+  <div class="w3-responsive">
+    <table class="w3-table-all w3-hoverable w3-card-4">
+      <thead>
+        <tr class="w3-dark-grey">
+          <th>Model</th>
+          <th>Accuracy</th>
+          <th>Precision</th>
+          <th>Recall</th>
+          <th>Notes</th>
+          <th>Jump To</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Logistic Regression</td>
+          <td>~91%</td>
+          <td>High</td>
+          <td>High</td>
+          <td>Best overall; well-balanced and interpretable.</td>
+          <td><a href="#logistic-regression">View</a></td>
+        </tr>
+        <tr>
+          <td>Random Forest</td>
+          <td>~90%</td>
+          <td>High</td>
+          <td>High</td>
+          <td>Strong ensemble model with robustness.</td>
+          <td><a href="#random-forest">View</a></td>
+        </tr>
+        <tr>
+          <td>Naive Bayes</td>
+          <td>~85%</td>
+          <td>Moderate</td>
+          <td>High</td>
+          <td>Fast, lightweight, great for real-time use.</td>
+          <td><a href="#naive-bayes">View</a></td>
+        </tr>
+        <tr>
+          <td>SVM</td>
+          <td>~88%</td>
+          <td>Moderate</td>
+          <td>Moderate</td>
+          <td>Good in high-dimensional spaces.</td>
+          <td><a href="#svm">View</a></td>
+        </tr>
+        <tr>
+          <td>KNN</td>
+          <td>~83%</td>
+          <td>Moderate</td>
+          <td>Low</td>
+          <td>Simple but computationally heavy.</td>
+          <td><a href="#knn">View</a></td>
+        </tr>
+        <tr>
+          <td>Decision Tree</td>
+          <td>~86%</td>
+          <td>Moderate</td>
+          <td>Moderate</td>
+          <td>Interpretable but may overfit.</td>
+          <td><a href="#decision-tree">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<hr>
+<!-- Execution Demo Section -->
+<div class="w3-row w3-padding-64" id="demo">
+    
+    
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <h1 class="w3-center">Project Execution Demo</h1><br>
+      <h5 class="w3-center">From Code to Clarity</h5>
+      <p class="w3-large">
+        This video walkthrough captures the complete execution pipeline — from data preprocessing and exploratory analysis to machine learning model training and evaluation. It demonstrates how each component works in sync to detect fake news with precision.
+      </p>
+      <div class="w3-container w3-padding-16">
+        <!-- Replace the src link below with your YouTube or MP4 embed -->
+        <div class="w3-round w3-image w3-opacity-min">
+          <iframe width="100%" height="315" src="ass2exe.mp4"
+                  title="Project Demo Video" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>  
+ <!-- Conclusion Section -->
+<div class="w3-row w3-padding-64" id="conclusion">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="resources/conclusions.webp" class="w3-round w3-image w3-opacity-min" alt="Conclusion" width="600" height="750">
+    </div>
+    
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Final Thoughts</h1><br>
+      <h5 class="w3-center">Crunching Numbers, Spotting Lies</h5>
+      <p class="w3-large">
+        From raw data to reliable detection — this project was all about extracting meaning from noise. Combining statistical insights with machine learning intelligence, I uncovered the subtle (and not-so-subtle) traits of fake news.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        Whether dissecting word counts or training models to call out misinformation, every step added a layer of understanding. The visualizations made patterns pop, and the models gave those patterns predictive power. Together, they showed that fighting fake news is as much about clarity as it is about code.
+        <br><br>
+        This wasn’t just a technical exercise — it was a mission to decode digital deception. And it’s only the beginning.
+      </p>
+    </div>
+  </div>
+  
+  
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
